@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>UniChain</title>
+    <style>
+      #wallet-panel{
+        border : red
+      }
+    </style>
+  </head>
+  <body>
+    <span id="errorMessage"></span>
+    <span id="hashValue" >Hash = </span>
+    <div id="register-panel"> 
+      <h1>Please register</h1>
+      <form action="#">
+        <label for="email">Email</label>
+        <input type="text" id="email"><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password"><br>
+      
+        <button id="register" >Register</button>
+      </form>
+    </div>
+    <div id="login-panel">
+        <h1>Please Login</h1>
+        <form action="#">
+            <label for="hash">hash</label>
+            <input type="text" id="hash"><br>
+
+            <button id="login">Login</button>
+        </form>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
