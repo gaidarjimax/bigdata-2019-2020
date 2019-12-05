@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="loginForm" >
+      <label for="userId">User Id</label>
+      <input id="userIdLogin" type="text">
+      <button onclick="login()" >Login</button>
+    </div>
+    <div id="logout" style="display: none;">
+      <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+          <span>Logged User: </span>
+          <span id="loggedUser"></span>
+          <button onclick="logout()">Log out</button>
+          <button onclick="refresh()">refresh</button>
+      </div>
+    </div>
+    <div id="authorisedContent" style="display: none;">
+      <div style="background-color: #03ecfc;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; width: 80%;">
+          <ul id='sidebar' style="list-style: none;"></ul>
+          <ul id='users' style="list-style: none;"></ul>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+          <label for="username">User Name</label>
+          <input type="text" id='username'>
+          <button id='addUser' onclick="createUser()">Add User</button>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
